@@ -182,24 +182,6 @@ colnames(meanCC) <- c("BALANCE","BALANCE_FREQUENCY","PURCHASES","ONEOFF_PURCHASE
 
 rownames(meanCC) <- c("cluster 1", "cluster 2", "cluster 3", "cluster 4", "cluster 5", "cluster 6", "cluster 7")
 
-
-############################
-
-#Ch1 = hclust(CC2_dist, method = "single" )
-#plot(Ch1, cex = 0.6, hang = -1)
-#rect.hclust(Ch1, k = 7, border = 2:5)
-#sub_grp_3 <- cutree(Ch1, k = 7)
-
-#Ch1_cluss <- cbind(CC2, c1 = sub_grp_3)
-#summary(aov(cbind(BALANCE,BALANCE_FREQUENCY,PURCHASES,ONEOFF_PURCHASES,INSTALLMENTS_PURCHASES,CASH_ADVANCE,
-                 # PURCHASES_FREQUENCY,ONEOFF_PURCHASES_FREQUENCY,PURCHASES_INSTALLMENTS_FREQUENCY,CASH_ADVANCE_FREQUENCY,CASH_ADVANCE_TRX
-                  #,PURCHASES_TRX,CREDIT_LIMIT,PAYMENTS,MINIMUM_PAYMENTS,PRC_FULL_PAYMENT,TENURE) ~ c1, data = Ch1_cluss))
-
-#frameCh1_cluss = data.frame(Ch1_cluss)
-#Ch1d <- describe(cbind(BALANCE,BALANCE_FREQUENCY,PURCHASES,ONEOFF_PURCHASES,INSTALLMENTS_PURCHASES,CASH_ADVANCE,
-                      #PURCHASES_FREQUENCY,ONEOFF_PURCHASES_FREQUENCY,PURCHASES_INSTALLMENTS_FREQUENCY,CASH_ADVANCE_FREQUENCY,CASH_ADVANCE_TRX
-                      #,PURCHASES_TRX,CREDIT_LIMIT,PAYMENTS,MINIMUM_PAYMENTS,PRC_FULL_PAYMENT,TENURE) ~ c1, data = Ch1_cluss)
-
 ###################
 
 Ch4 = hclust(CC2_dist, method = "ward.D" )
